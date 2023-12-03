@@ -23,31 +23,40 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../styles/search.css" />
+    <!-- axios -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+      integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Search</title>
   </head>
   <body>
+    <div class="alerts fixed top-20 end-4 grid gap-2">ertwet</div>
+
     <div class="container h-100 w-100">
       <div class="row h-100">
         <div class="col-md-4 col-xl-3">
           <div class="card">
             <div class="card-header">
-
               <div class="d-flex bd-highlight justify-content-between my-3">
                 <div class="d-flex">
                   <div class="img_cont">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF88gkFOUPddOro_e3vQByoxDFgpILK_e6VjaGVZntcEf437sjdSl7O4H_os4eVO_sH9U&usqp=CAU"
-                      class="rounded-circle user_img"
+                      class="rounded-circle user_img userImg"
                     />
                   </div>
                   <div class="user_info">
-                    <span>Thomas</span>
-                    <p>+998 (99) 123-45-67</p>
+                    <span class="fullName">Thomas</span>
+                    <p class="phoneNumber">+998 (99) 123-45-67</p>
                   </div>
                 </div>
 
-                <div class="log-out-btn btn">
-                  <h3 class="text-danger">Log out</h3>
+                <div class="btn">
+                  <h3 class="text-danger log-out-btn">Log out</h3>
                 </div>
               </div>
 
@@ -92,7 +101,7 @@
                       <span class="online_icon offline"></span>
                     </div>
                     <div class="user_info">
-                      <span>Diana</span>
+                      <span>Diana Ankudinova</span>
                       <p>Left 7 mins ago</p>
                     </div>
                   </div>
@@ -135,6 +144,6 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="../js/search.js"></script>
+    <script type="text/javascript" src="./js/search.js"></script>
   </body>
 </html>
