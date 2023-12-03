@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      let userId = localStorage.getItem("user-id");
+      if (!userId) window.location.replace("/pages/login.html");
+    </script>
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -67,7 +71,7 @@
                   />
                 </div>
                 <div class="msg_cotainer">
-                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet
                   <span class="msg_time">8:40 AM, Today</span>
                 </div>
               </div>
